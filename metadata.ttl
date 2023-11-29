@@ -1,10 +1,10 @@
 @prefix : <https://w3id.org/riverbench/temp#> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix eurovoc: <http://eurovoc.europa.eu/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rb: <https://w3id.org/riverbench/schema/metadata#> .
 @prefix rbdoc: <https://w3id.org/riverbench/schema/documentation#> .
-@prefix rbt: <https://w3id.org/riverbench/schema/theme#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 @prefix stax: <https://w3id.org/stax/ontology#> .
@@ -40,7 +40,12 @@ The dataset is a real application of RDF streaming (originally streamed over MQT
     ] ;
     
     # Themes
-    dcat:theme rbt:temporal, rbt:spatial, rbt:sensorData, rbt:meteorological ;
+    dcat:theme
+        eurovoc:c_7a168de0, # spatial data
+        eurovoc:6030, # data collection
+        eurovoc:c_b12a760a, # Internet of Things
+        eurovoc:1892 # meteorology
+    ;
 
     # Technical metadata
     # URIs of the ontologies used in the dataset
