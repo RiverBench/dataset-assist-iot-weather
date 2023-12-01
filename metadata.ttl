@@ -8,6 +8,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 @prefix stax: <https://w3id.org/stax/ontology#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # This file contains the manually written metadata for the dataset.
@@ -49,7 +50,7 @@ The dataset is a real application of RDF streaming (originally streamed over MQT
 
     # Technical metadata
     # URIs of the ontologies used in the dataset
-    rb:usesOntology
+    void:vocabulary
         <http://www.opengis.net/ont/geosparql> ,
         <http://www.ontology-of-units-of-measure.org/resource/om-2> ,
         <http://www.w3.org/ns/sosa> ,
